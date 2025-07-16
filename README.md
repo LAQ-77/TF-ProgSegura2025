@@ -33,20 +33,23 @@ Este es un frontend desarrollado con HTML, CSS y JavaScript puro que consume una
 ## Estructura del Proyecto
 
 
+```
 jwt_frontend/
-+-- index.html              # Página principal
-+-- css/
-¦   +-- styles.css          # Estilos
-+-- js/
-¦   +-- config.js           # Configuración general
-¦   +-- auth.js             # Módulo de autenticación
-¦   +-- api.js              # Acceso a la API
-¦   +-- ui.js               # Lógica de interfaz
-¦   +-- alumnos.js          # Gestión de alumnos
-¦   +-- cursos.js           # Gestión de cursos
-¦   +-- inscripciones.js    # Gestión de inscripciones
-¦   +-- app.js              # Lógica principal
-+-- README.md               # Este archivo
+├── index.html             # Página principal
+├── css/
+│   └── styles.css         # Estilos
+├── js/
+│   ├── config.js          # Configuración general
+│   ├── auth.js            # Módulo de autenticación
+│   ├── api.js             # Acceso a la API
+│   ├── ui.js              # Lógica de interfaz
+│   ├── alumnos.js         # Gestión de alumnos
+│   ├── cursos.js          # Gestión de cursos
+│   ├── inscripciones.js   # Gestión de inscripciones
+│   └── app.js             # Lógica principal
+└── README.md              # Este archivo
+```
+
 
 
 
