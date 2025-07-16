@@ -369,7 +369,7 @@ class UIManager {
             const value = data[fieldName];
             const field = form.querySelector(`[name="${fieldName}"]`);
 
-            if (rule.required && (!value || value.trim() === '')) {
+            if (rule.required && (typeof value === 'string' && value.trim() === '') ) {
                 errors.push(`${rule.label || fieldName} es obligatorio`);
                 if (field) field.classList.add('error');
             } else if (field) {

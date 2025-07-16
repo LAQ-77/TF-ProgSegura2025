@@ -12,6 +12,9 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name = "cursos")
 @Getter
@@ -51,5 +54,13 @@ public class Curso {
 
     // Relación muchos a muchos con Alumno
     @ManyToMany(mappedBy = "cursos", fetch = FetchType.LAZY)
+    @JsonIgnore
+    //@JoinTable(name = "alumno_curso", joinColumns = @JoinColumn(name = "alumno_id"), inverseJoinColumns = @JoinColumn(name = "curso_id"))
     private List<Alumno> alumnos = new ArrayList<>();
+
+    //@ManyToMany
+    //@JoinTable(name = "alumno_curso", joinColumns = @JoinColumn(name = "alumno_id"), inverseJoinColumns = @JoinColumn(name = "curso_id"))
+    //@JsonManagedReference
+    //private List<Curso> cursos = new ArrayList<>();
+
 }
