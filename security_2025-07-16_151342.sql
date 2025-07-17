@@ -70,7 +70,7 @@ CREATE TABLE `alumnos` (
 --
 
 /*!40000 ALTER TABLE `alumnos` DISABLE KEYS */;
-INSERT INTO `alumnos` VALUES (1,0x01,'quadraccia','av medrano 701 1/3','55300217','lquadraccia@gmail.com','2025-07-16','2025-07-01','leonardo','01159204598');
+INSERT INTO `alumnos` VALUES (1,0x01,'leonardo','av medrano','55300217','micorreo@gmail.com','2025-07-16','2025-07-01','leonardo W','01151204598');
 /*!40000 ALTER TABLE `alumnos` ENABLE KEYS */;
 
 --
